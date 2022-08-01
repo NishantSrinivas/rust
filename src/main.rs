@@ -1,9 +1,36 @@
+#[allow(dead_code)]
 // use std::mem;
+
+// struct Point {
+//     x: f64,
+//     y: f64,
+// }
+
+// struct Line {
+//     start: Point,
+//     end: Point,
+// }
+
+// fn create_line(_start: Point, _end: Point) -> Line {
+//     let line: Line = Line {
+//         start: _start,
+//         end: _end,
+//     };
+//     return line;
+// }
+
+// enum Shapes
+// {
+//     Circle,
+//     Square,
+//     Rectangle,
+//     Triangle
+// }
 
 fn main() {
     println!("Hello Rust!");
 
-    // // declaring immuatable var 
+    // // declaring immuatable var
     // let intu8: u8 = 255;
     // println!("intu8 = {}, with size {} bytes",intu8,mem::size_of_val(&intu8));
 
@@ -46,7 +73,7 @@ fn main() {
     // {
     //     println!("{}",y);
     // }
-    
+
     // let mut x = 0;
     // while x <= 10
     // {
@@ -64,14 +91,14 @@ fn main() {
     //     }
     //     println!("{}",y);
     //     y += 1;
-    //     if y==10 
+    //     if y==10
     //     {
     //         break;
     //     }
     // }
 
     // let x: u8 = 10;
-    // let num: &str = match x 
+    // let num: &str = match x
     // {
     //     1 => "one",
     //     2 => "two",
@@ -88,4 +115,37 @@ fn main() {
 
     // println!("{}",num);
 
+    // playing with data structures
+
+    // let p1: Point = Point { x: 10.0, y: 20.0 };
+    // let p2: Point = Point { x: 20.0, y: 30.0 };
+
+    // let newline = create_line(p1, p2);
+
+    // println!(
+    //     "Line starts at ({},{}) and ends at ({},{})",
+    //     newline.start.x, newline.start.y, newline.end.x, newline.end.y
+    // );
+
+    // let my_shape: Shapes = Shapes::Triangle;
+
+    // match my_shape
+    // {
+    //     Shapes::Triangle => {println!("It's a Triangle")},
+    //     Shapes::Rectangle => {println!("It's a Rectangle")},
+    //     Shapes::Square => {println!("It's a Square")},
+    //     Shapes::Circle => {println!("It's a Circle")}
+    // }
+
+    // Option type
+    let x = 10;
+    // let y = 5;
+    let y = 0;
+
+    let z = if y == 0 { None } else { Some(x / y) };
+
+    match z {
+        Some(v) => println!("{}/{} = {}", x, y, v),
+        None => println!("divide be zero not possible"),
+    };
 }
