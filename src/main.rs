@@ -138,14 +138,14 @@ fn main() {
     // }
 
     // Option type
-    let x = 10;
+    // let x = 10;
     // let y = 5;
-    let y = 0;
+    // let y = 0;
 
-    let z = if y == 0 { None } else { Some(x / y) };
+    // let z = if y == 0 { None } else { Some(x / y) };
 
-    match z {
-        Some(v) => println!("{}/{} = {}", x, y, v),
-        None => println!("divide be zero not possible"),
-    };
+    // match z {
+    //     Some(v) => println!("{}/{} = {}", x, y, v),
+    //     None => println!("divide be zero not possible"),
+    // };
 }
