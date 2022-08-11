@@ -27,15 +27,15 @@
 //     Triangle
 // }
 
-fn match_int_pattern(i: u8) {
-    match i {
-        1 => println!("it's one"),
-        2..=5 => println!("it's some number btw 2 and 5"),
-        _ if (i % 6 == 0) => println!("it's some number divisible by 6"),
-        _ if (i % 10 == 0) => println!("it's some number divisible by 10"),
-        _ => println!("some value"),
-    }
-}
+// fn match_int_pattern(i: u8) {
+//     match i {
+//         1 => println!("it's one"),
+//         2..=5 => println!("it's some number btw 2 and 5"),
+//         _ if (i % 6 == 0) => println!("it's some number divisible by 6"),
+//         _ if (i % 10 == 0) => println!("it's some number divisible by 10"),
+//         _ => println!("some value"),
+//     }
+// }
 
 fn main() {
     println!("Hello Rust!");
@@ -284,7 +284,40 @@ fn main() {
     //     _ => println!("something")
     // }
 
-    for i in 1..21 {
-        match_int_pattern(i);
+    // for i in 1..21 {
+    //     match_int_pattern(i);
+    // }
+
+    // Vec
+
+    let mut vector = Vec::new();
+
+    for i in 1..6 {
+        vector.push(i);
+    }
+
+    println!("vector = {:?}", vector);
+    println!("vector size: {}", vector.len());
+
+    let x = vector.pop();
+    match x {
+        Some(x) => println!("we have some value {}", x),
+        None => println!("vector didn't contain any value"),
+    }
+
+    println!("vector = {:?}", vector);
+    println!("vector size: {}", vector.len());
+
+    for _ in 0..4 {
+        vector.pop();
+    }
+
+    println!("vector = {:?}", vector);
+    println!("vector size: {}", vector.len());
+
+    let y = vector.pop();
+    match y {
+        Some(y) => println!("we have some value {}", y),
+        None => println!("vector didn't contain any value"),
     }
 }
