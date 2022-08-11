@@ -27,6 +27,16 @@
 //     Triangle
 // }
 
+fn match_int_pattern(i: u8) {
+    match i {
+        1 => println!("it's one"),
+        2..=5 => println!("it's some number btw 2 and 5"),
+        _ if (i % 6 == 0) => println!("it's some number divisible by 6"),
+        _ if (i % 10 == 0) => println!("it's some number divisible by 10"),
+        _ => println!("some value"),
+    }
+}
+
 fn main() {
     println!("Hello Rust!");
 
@@ -243,13 +253,38 @@ fn main() {
     // };
 
     // Arrays
-    let arr = [1, 2, 3, 4, 5];
-    println!("{:?}", arr);
+    // let arr = [1, 2, 3, 4, 5];
+    // println!("{:?}", arr);
 
-    let arr2: [u8; 10] = [1; 10];
-    println!("arr2 : {:?}", arr2);
-    println!("arr2 size: {}", arr2.len());
+    // let arr2: [u8; 10] = [1; 10];
+    // println!("arr2 : {:?}", arr2);
+    // println!("arr2 size: {}", arr2.len());
 
-    let arr3 = &arr2[3..7];
-    println!("arr3 : {:?}", arr3);
+    // let arr3 = &arr2[3..7];
+    // println!("arr3 : {:?}", arr3);
+
+    // Tuples
+    // let mut tuple1 = (10, false);
+    // println!("{} and {}",tuple1.0, tuple1.1);
+
+    // let (a,b) = tuple1;
+    // println!("a is {}",a);
+    // println!("b is {}",b);
+
+    // tuple1.0 = 12;
+    // tuple1.1 = true;
+    // println!("{}",tuple1.0);
+
+    // Pattern matching
+    // match tuple1
+    // {
+    //     (10,false) => println!("10 and false"),
+    //     (12,false) => println!("12 and false"),
+    //     (_,true) => println!("something with true"),
+    //     _ => println!("something")
+    // }
+
+    for i in 1..21 {
+        match_int_pattern(i);
+    }
 }
