@@ -243,13 +243,13 @@ fn main() {
     // };
 
     // Arrays
-    let arr = [1,2,3,4,5];
+    let arr = [1, 2, 3, 4, 5];
     println!("{:?}", arr);
 
-    let arr2:[u8;10] = [1;10];
-    println!("arr2 : {:?}",arr2);
-    println!("arr2 size: {}",arr2.len());
+    let arr2: [u8; 10] = [1; 10];
+    println!("arr2 : {:?}", arr2);
+    println!("arr2 size: {}", arr2.len());
 
     let arr3 = &arr2[3..7];
-    println!("arr3 : {:?}",arr3);
+    println!("arr3 : {:?}", arr3);
 }
