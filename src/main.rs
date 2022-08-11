@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+use std::collections::HashMap;
 // use std::mem;
 
 // struct Point {
@@ -290,34 +291,59 @@ fn main() {
 
     // Vec
 
-    let mut vector = Vec::new();
+    // let mut vector = Vec::new();
 
-    for i in 1..6 {
-        vector.push(i);
+    // for i in 1..6 {
+    //     vector.push(i);
+    // }
+
+    // println!("vector = {:?}", vector);
+    // println!("vector size: {}", vector.len());
+
+    // let x = vector.pop();
+    // match x {
+    //     Some(x) => println!("we have some value {}", x),
+    //     None => println!("vector didn't contain any value"),
+    // }
+
+    // println!("vector = {:?}", vector);
+    // println!("vector size: {}", vector.len());
+
+    // for _ in 0..4 {
+    //     vector.pop();
+    // }
+
+    // println!("vector = {:?}", vector);
+    // println!("vector size: {}", vector.len());
+
+    // let y = vector.pop();
+    // match y {
+    //     Some(y) => println!("we have some value {}", y),
+    //     None => println!("vector didn't contain any value"),
+    // }
+
+    // HashMap
+    let mut my_map = HashMap::new();
+
+    my_map.insert("Cat", 4);
+    my_map.insert("Duck", 2);
+
+    println!("my_map = {:?}", my_map);
+    println!("my_map = {}", my_map.len());
+
+    for (animal, leg_count) in &my_map {
+        println!("{} has {} legs", animal, leg_count);
     }
 
-    println!("vector = {:?}", vector);
-    println!("vector size: {}", vector.len());
+    println!("Cat has {} legs", my_map["Cat"]);
+    // println!("Human has {} legs",my_map["Human"]); // will cause error
 
-    let x = vector.pop();
-    match x {
-        Some(x) => println!("we have some value {}", x),
-        None => println!("vector didn't contain any value"),
-    }
+    // my_map.insert("Dog",5);
 
-    println!("vector = {:?}", vector);
-    println!("vector size: {}", vector.len());
+    // println!("my_map = {:?}",my_map);
+    // println!("my_map = {}",my_map.len());
 
-    for _ in 0..4 {
-        vector.pop();
-    }
-
-    println!("vector = {:?}", vector);
-    println!("vector size: {}", vector.len());
-
-    let y = vector.pop();
-    match y {
-        Some(y) => println!("we have some value {}", y),
-        None => println!("vector didn't contain any value"),
-    }
+    // my_map["Dog"] = 4; // will cause error
+    // println!("my_map = {:?}",my_map);
+    // println!("my_map = {}",my_map.len());
 }
