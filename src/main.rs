@@ -144,8 +144,112 @@ fn main() {
 
     // let z = if y == 0 { None } else { Some(x / y) };
 
+    // let mut boolean = true;
+    // println!("boolean = {}",boolean);
+    // boolean = false;
+    // println!("boolean = {}",boolean);
+    // println!("{}",&boolean);
+
+    // playing with loops
+
+    // for x in 1..=10
+    // {
+    //     println!("x => {}",x);
+    // }
+
+    // for (i,y) in (1..=20).enumerate()
+    // {
+    //     println!("{}: {}",i,y);
+    // }
+
+    // for (_,y) in (1..=20).enumerate()
+    // {
+    //     println!("{}",y);
+    // }
+
+    // let mut x = 0;
+    // while x <= 10
+    // {
+    //     println!("{}",x);
+    //     x+=1;
+    // }
+
+    // The never ending loop xD
+    // let mut y = 0;
+    // loop
+    // {
+    //     if y == 5
+    //     {
+    //         continue;
+    //     }
+    //     println!("{}",y);
+    //     y += 1;
+    //     if y==10
+    //     {
+    //         break;
+    //     }
+    // }
+
+    // let x: u8 = 10;
+    // let num: &str = match x
+    // {
+    //     1 => "one",
+    //     2 => "two",
+    //     3 => "three",
+    //     4 => "four",
+    //     5 => "five",
+    //     6 => "six",
+    //     7 => "seven",
+    //     8 => "eight",
+    //     9 => "nine",
+    //     10 => "ten",
+    //     _ => "out of bounds"
+    // };
+
+    // println!("{}",num);
+
+    // playing with data structures
+
+    // let p1: Point = Point { x: 10.0, y: 20.0 };
+    // let p2: Point = Point { x: 20.0, y: 30.0 };
+
+    // let newline = create_line(p1, p2);
+
+    // println!(
+    //     "Line starts at ({},{}) and ends at ({},{})",
+    //     newline.start.x, newline.start.y, newline.end.x, newline.end.y
+    // );
+
+    // let my_shape: Shapes = Shapes::Triangle;
+
+    // match my_shape
+    // {
+    //     Shapes::Triangle => {println!("It's a Triangle")},
+    //     Shapes::Rectangle => {println!("It's a Rectangle")},
+    //     Shapes::Square => {println!("It's a Square")},
+    //     Shapes::Circle => {println!("It's a Circle")}
+    // }
+
+    // Option type
+    // let x = 10;
+    // let y = 5;
+    // let y = 0;
+
+    // let z = if y == 0 { None } else { Some(x / y) };
+
     // match z {
     //     Some(v) => println!("{}/{} = {}", x, y, v),
     //     None => println!("divide be zero not possible"),
     // };
+
+    // Arrays
+    let arr = [1,2,3,4,5];
+    println!("{:?}", arr);
+
+    let arr2:[u8;10] = [1;10];
+    println!("arr2 : {:?}",arr2);
+    println!("arr2 size: {}",arr2.len());
+
+    let arr3 = &arr2[3..7];
+    println!("arr3 : {:?}",arr3);
 }
