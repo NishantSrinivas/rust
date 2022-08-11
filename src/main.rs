@@ -1,5 +1,7 @@
 #[allow(dead_code)]
+#[allow(unused_imports)]
 use std::collections::HashMap;
+use std::collections::HashSet;
 // use std::mem;
 
 // struct Point {
@@ -323,19 +325,19 @@ fn main() {
     // }
 
     // HashMap
-    let mut my_map = HashMap::new();
+    // let mut my_map = HashMap::new();
 
-    my_map.insert("Cat", 4);
-    my_map.insert("Duck", 2);
+    // my_map.insert("Cat", 4);
+    // my_map.insert("Duck", 2);
 
-    println!("my_map = {:?}", my_map);
-    println!("my_map = {}", my_map.len());
+    // println!("my_map = {:?}", my_map);
+    // println!("my_map = {}", my_map.len());
 
-    for (animal, leg_count) in &my_map {
-        println!("{} has {} legs", animal, leg_count);
-    }
+    // for (animal, leg_count) in &my_map {
+    //     println!("{} has {} legs", animal, leg_count);
+    // }
 
-    println!("Cat has {} legs", my_map["Cat"]);
+    // println!("Cat has {} legs", my_map["Cat"]);
     // println!("Human has {} legs",my_map["Human"]); // will cause error
 
     // my_map.insert("Dog",5);
@@ -344,6 +346,35 @@ fn main() {
     // println!("my_map = {}",my_map.len());
 
     // my_map["Dog"] = 4; // will cause error
-    // println!("my_map = {:?}",my_map);
-    // println!("my_map = {}",my_map.len());
+
+    // HashSet
+    // let mut my_set = HashSet::new();
+
+    // my_set.insert("A");
+    // println!("my_set = {:?}",my_set);
+
+    // my_set.insert("B");
+    // my_set.insert("C");
+    // my_set.insert("D");
+    // my_set.insert("E");
+    // my_set.insert("F");
+
+    // println!("my_set = {:?}",my_set);
+
+    // if my_set.contains("A")
+    // {
+    //     println!("my_set has A in it");
+    // }
+
+    // if !my_set.contains("X")
+    // {
+    //     println!("my_set doesn't have X in it");
+    // }
+
+    // let mut my_set2:HashSet<_> = (1..=10).collect();
+    // if my_set2.insert(11)
+    // {
+    //     println!("insert ok");
+    // }
+    // println!("{:?}",my_set2);
 }
