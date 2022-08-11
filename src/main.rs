@@ -1,7 +1,7 @@
 #[allow(dead_code)]
 #[allow(unused_imports)]
-use std::collections::HashMap;
-use std::collections::HashSet;
+// use std::collections::HashMap;
+// use std::collections::HashSet;
 // use std::mem;
 
 // struct Point {
@@ -377,4 +377,23 @@ fn main() {
     //     println!("insert ok");
     // }
     // println!("{:?}",my_set2);
+
+    // Iterator
+    
+    let vec = vec![1,2,3,4,5];
+
+    // for i in vec.iter()
+    // {
+    //     println!("{}",i);
+    // }
+
+    // for j in vec.iter().rev()
+    // {
+    //     println!("{}",j);
+    // }
+
+    // for (ind,k) in vec.iter().rev().enumerate()
+    // {
+    //     println!("indx : {}, val : {}",ind,k);
+    // }
 }
