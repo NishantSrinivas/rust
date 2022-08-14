@@ -380,7 +380,7 @@ fn main() {
 
     // Iterator
     
-    let vec = vec![1,2,3,4,5];
+    // let vec = vec![1,2,3,4,5];
 
     // for i in vec.iter()
     // {
@@ -396,4 +396,31 @@ fn main() {
     // {
     //     println!("indx : {}, val : {}",ind,k);
     // }
+
+    // Strings
+
+    // let string:String = "Hello World".to_string(); // converting from &str -> String
+    
+    // for c in string.chars()
+    // {
+    //     println!("{}",c);
+    // }
+
+    // for c in string.chars().rev()
+    // {
+    //     println!("{}",c);
+    // }
+
+    // for (indx,c) in string.chars().enumerate()
+    // {
+    //     println!("{} -> {}",indx,c);
+    // }
+
+    // string = string + ", Welcome to Rust programming!";
+
+    // let greetings:String = format!("Rust wants to say {}",string);
+    // let name = "Nishant".to_string();    
+    // println!("{}, from {_name}'s program.",greetings, _name = name);
+    
+    // println!("{}",string);
 }
